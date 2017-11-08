@@ -7,14 +7,28 @@ import { connect } from 'react-redux';
 import Swiper from '../components/Swiper';
 
 import { login, loginOut } from '../actions/actions';
+import HttpRequest from '../utils/HttpRequest';
 
 class Home extends React.Component {
+  
   render () {
     let props: any = this.props;
     return (
       <div onClick={() => props.login()}>get{props.Login}
         <Swiper dataList={['']} />
       </div>
+    );
+  }
+  
+  componentDidMount () {
+    HttpRequest.getHomeData(
+      '',
+      (res: any) => {
+        console.log(res);
+      },
+      (err: any) => {
+        console.log(err);
+      }
     );
   }
 }

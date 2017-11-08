@@ -4,9 +4,9 @@
 
 import thunk from 'redux-thunk';
 import { createStore, applyMiddleware, compose } from 'redux';
-
-// eslint-disable-next-line
-const middleware: Array<any> = [thunk];
+import * as Logger from 'redux-logger';
+const loggerMiddleware: any = Logger.createLogger();
+const middleware: Array<any> = [thunk, loggerMiddleware];
 const finalCreactStore = compose(
   applyMiddleware(...middleware)
 )(createStore);

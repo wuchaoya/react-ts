@@ -4,17 +4,15 @@
 
 import * as actions from '../constants/actionsType';
 
-export default class Actions {
-  static login () {
-    return {
-      type: actions.LOGIN,
-      state: true
-    };
-  }
-  static loginOut () {
-    return {
-      type: actions.LOGINOUT,
-      state: false
-    };
-  }
+export function login () {
+  return {
+    type: actions.LOGIN,
+    state: true
+  };
+}
+export function loginOut () {
+  return {
+    type: actions.LOGIN,
+    state: false
+  };
 }

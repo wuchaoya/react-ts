@@ -4,18 +4,24 @@
 
 import * as React from 'react';
 import { connect } from 'react-redux';
+import Swiper from '../components/Swiper';
+
+import { login, loginOut } from '../actions/actions';
 
 class Home extends React.Component {
   render () {
+    let props: any = this.props;
     return (
-      <div>get</div>
+      <div onClick={() => props.login()}>get{props.Login}
+        <Swiper dataList={['']} />
+      </div>
     );
   }
 }
 const getLogin: any = (state: any) => {
   return {
-    login: state.update.login
+    Login: state.update.login
   };
 };
-
-export default connect(getLogin)(Home);
+const func: any = { login, loginOut };
+export default connect(getLogin, func)(Home);

@@ -5,6 +5,8 @@
   "dependencies": {
     "@types/react-redux": "^5.0.12",
     "@types/react-router-dom": "^4.2.0",
+    "@types/redux-logger": "^3.0.5",
+    "rc-gesture": "^0.0.15",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.6",
@@ -25,5 +27,6 @@
     "@types/node": "^8.0.47",
     "@types/react": "^16.0.19",
     "@types/react-dom": "^16.0.2"
-  }
+  },
+  "proxy": "http://pcloud.haimawan.com"
 }

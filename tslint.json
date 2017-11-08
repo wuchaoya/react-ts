@@ -8,9 +8,9 @@
             "statements"
         ],
         "ban": false,
-        "class-name": true,
+        "class-name": false,
         "comment-format": [
-            true,
+            false,
             "check-space"
         ],
         "curly": true,
@@ -33,7 +33,7 @@
         "no-arg": true,
         "no-bitwise": true,
         "no-console": [
-            true,
+            false,
             "log",
             "error",
             "debug",
@@ -61,7 +61,7 @@
             "check-open-brace",
             "check-whitespace"
         ],
-        "quotemark": [true, "single", "jsx-double"],
+        "quotemark": [false, "single", "jsx-double"],
         "radix": true,
         "semicolon": [true, "always"],
         "switch-default": true,

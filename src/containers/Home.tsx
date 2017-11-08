@@ -3,13 +3,19 @@
  */
 
 import * as React from 'react';
+import { connect } from 'react-redux';
 
 class Home extends React.Component {
   render () {
     return (
-      <div>首页</div>
+      <div>get</div>
     );
   }
 }
+const getLogin: any = (state: any) => {
+  return {
+    login: state.update.login
+  };
+};
 
-export default Home;
+export default connect(getLogin)(Home);

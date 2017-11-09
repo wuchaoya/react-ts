@@ -4,6 +4,7 @@
 
 import * as React from 'react';
 import Gesture from 'rc-gesture';
+import log from '../utils/DebugLog';
 
 interface Props {
   dataList: any[];
@@ -17,7 +18,7 @@ export default class Swiper extends React.Component<Props, any> {
   }
   
   render () {
-    console.log(this.props);
+    log(this.props);
     let { dataList }: any = this.props;
     return (
       <Gesture>

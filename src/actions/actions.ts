@@ -10,9 +10,16 @@ export function login () {
     state: true
   };
 }
+
 export function loginOut () {
   return {
     type: actions.LOGIN,
     state: false
+  };
+}
+export function setHomeData (data:  any) {
+  return {
+    type: actions.SETHOMEDATA,
+    data: data
   };
 }

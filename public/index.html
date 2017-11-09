@@ -4,19 +4,75 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-    -->
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <style>
+      html, body, div, span, applet, object, iframe,
+      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+      a, abbr, acronym, address, big, cite, code,
+      del, dfn, em, font, img, ins, kbd, q, s, samp,
+      small, strike, strong, sub, sup, tt, var,
+      b, u, i, center,
+      dl, dt, dd, ol, ul, li,
+      fieldset, form, label, legend,
+      table, caption, tbody, tfoot, thead, tr, th, td { background: transparent; border: 0; margin: 0; padding: 0; vertical-align: baseline; font-size: 100%; font: inherit; -webkit-text-size-adjust: none; }
+      body { line-height: 1;}
+      table { border-collapse: collapse; border-spacing: 0; }
+      object, :focus { outline: none; }
+      article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section /* HTML 5 */ { display: block; }
+      blockquote, q { quotes: none; }
+      blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+      a img { border: none; }
+      input,button,textarea,select,optgroup,option{ font-size: 100%; font: inherit;}
+      ::-webkit-scrollbar{
+        display: none;
+      }
+    </style>
+    <script>
+		  window.alert=function(){};
+		  ;(function (designWidth, maxWidth) {
+			  var doc = document;
+			  var win = window;
+			  var docEl = doc.documentElement;
+			  var remStyle = document.createElement('style');
+			  var tid;
+			  function refreshRem () {
+				  var width = docEl.getBoundingClientRect().width;
+				  maxWidth = maxWidth || 540;
+				  width > maxWidth && (width = maxWidth);
+				  var rem = width * 100 / designWidth;
+				  remStyle.innerHTML = 'html{font-size:' + rem + 'px;}';
+			  }
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+			  if (docEl.firstElementChild) {
+				  docEl.firstElementChild.appendChild(remStyle);
+			  } else {
+				  var wrap = doc.createElement('div');
+				  wrap.appendChild(remStyle);
+				  doc.write(wrap.innerHTML);
+				  wrap = null;
+			  }
+			  refreshRem();
+
+			  win.addEventListener('resize', function () {
+				  clearTimeout(tid);
+				  tid = setTimeout(refreshRem, 300);
+			  }, false);
+
+			  win.addEventListener('pageshow', function (e) {
+				  if (e.persisted) { // 浏览器后退的时候重新计算
+					  clearTimeout(tid);
+					  tid = setTimeout(refreshRem, 300);
+				  }
+			  }, false);
+
+			  if (doc.readyState === 'complete') {
+				  doc.body.style.fontSize = '16px';
+			  } else {
+				  doc.addEventListener('DOMContentLoaded', function (e) {
+					  doc.body.style.fontSize = '16px';
+				  }, false);
+			  }
+		  })(720, 720);
+    </script>
     <title>typeScript</title>
   </head>
   <body>
@@ -24,15 +80,5 @@
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

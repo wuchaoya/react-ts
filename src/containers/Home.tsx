@@ -6,7 +6,7 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 import Swiper from '../components/Swiper';
 
-import { login, loginOut, setHomeData } from '../actions/actions';
+import { login, loginOut, setHomeData, getData } from '../actions/actions';
 import HttpRequest from '../utils/HttpRequest';
 import Loading from '../components/Loading';
 import log from '../utils/DebugLog';
@@ -15,11 +15,12 @@ class Home extends React.Component {
   
   render () {
     let props: any = this.props;
-    return (
+    return props.homeDataState === 0 ? (
       <div>
-        <Loading onClick={() => { log('点击'); }} state={props.homeDataState} />
-        <Swiper dataList={['']} />
+        <Swiper showIndex={true} autoplay={true} dataList={props.homeData.banner} />
       </div>
+    ) : (
+      <Loading onClick={() => { log('点击'); }} state={props.homeDataState} />
     );
   }
   
@@ -28,7 +29,7 @@ class Home extends React.Component {
     HttpRequest.getHomeData(
       '',
       (res: any) => {
-        props.setHomeData(res, -1);
+        props.setHomeData(res, 0);
         log(res);
       },
       (err: any) => {
@@ -38,11 +39,6 @@ class Home extends React.Component {
     );
   }
 }
-const getLogin: any = (state: any) => {
-  return {
-    Login: state.update.login,
-    homeDataState: state.update.homeDataState
-  };
-};
+
 const func: any = { login, loginOut, setHomeData };
-export default connect(getLogin, func)(Home);
+export default connect(getData, func)(Home);

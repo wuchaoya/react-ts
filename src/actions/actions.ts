@@ -24,3 +24,11 @@ export function setHomeData (data:  any, state: number) {
     state: state
   };
 }
+
+export const getData: any = (state: any) => {
+  return {
+    Login: state.update.login,
+    homeDataState: state.update.homeDataState,
+    homeData: state.update.homeData
+  };
+};

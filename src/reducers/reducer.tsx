@@ -12,7 +12,7 @@ export default function update (state: any = initialState, action: any) {
     case actions.LOGINOUT:
       return Object.assign({}, state, {login: action.state});
     case actions.SETHOMEDATA:
-      return Object.assign({}, state, {homeData: action.data});
+      return Object.assign({}, state, {homeData: action.data, homeDataState: action.state});
     default:
       return state;
   }

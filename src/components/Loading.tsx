@@ -10,12 +10,12 @@ interface Props {
   errText?: string;
   buttonText?: string;
   onClick: any;
-  containerStyle?: object;
-  loadingIconStyle?: object;
-  errIconStyle?: object;
-  loadingTextStyle?: object;
-  errTextStyle?: object;
-  buttonStyle?: object;
+  containerStyle?: any;
+  loadingIconStyle?: any;
+  errIconStyle?: any;
+  loadingTextStyle?: any;
+  errTextStyle?: any;
+  buttonStyle?: any;
 }
 import * as React from 'react';
 import log from '../utils/DebugLog';
@@ -31,17 +31,15 @@ export default class Loading extends React.Component<Props, any> {
   render () {
     let props: any = this.props;
     log(props);
-    return (
-      <div style={Object.assign(styles.center, styles.containerStyle, props.containerStyle)}>
-        {props.state === -1 ? <img style={Object.assign({}, styles.loadingIconStyle, props.loadingIconStyle)} src={props.loadingIcon || loadingIcon} alt=''/> : null}
-        {props.state === -1 ? <span style={Object.assign(styles.textStyle, styles.marginTop, props.loadingTextStyle)}>{props.loadingText || loadingText}</span> : null}
-        {props.state === 1 ? <img style={Object.assign({}, styles.errIconStyle, props.errIconStyle)} src={props.errIcon || errIcon} alt=''/> : null}
-        {props.state === 1 ? <span style={Object.assign(styles.textStyle, styles.marginBottom, props.errTextStyle)}>{props.loadingText || errText}</span> : null}
-        {props.state === 1 ? <div onClick={props.onClick} style={Object.assign({}, styles.buttonStyle, props.buttonStyle)}>{props.buttonText || buttonText}</div> : null}
-      </div>
-    );
+    return props.state === 0 ? null : (
+      <div style={Object.assign({}, styles.containerStyle, props.containerStyle)}>
+          {props.state === -1 ? <img style={Object.assign({}, styles.loadingIconStyle, props.loadingIconStyle)} src={props.loadingIcon || loadingIcon} alt=''/> : null}
+          {props.state === -1 ? <span style={Object.assign(styles.marginTop, styles.textStyle, props.loadingTextStyle)}>{props.loadingText || loadingText}</span> : null}
+          {props.state === 1 ? <img style={Object.assign({}, styles.errIconStyle, props.errIconStyle)} src={props.errIcon || errIcon} alt=''/> : null}
+          {props.state === 1 ? <span style={Object.assign(styles.marginBottom, styles.textStyle, props.errTextStyle)}>{props.loadingText || errText}</span> : null}
+          {props.state === 1 ? <div onClick={props.onClick} style={Object.assign(styles.buttonStyle, styles.center, props.buttonStyle)}>{props.buttonText || buttonText}</div> : null}
+      </div>);
   }
-  
 }
 
 const styles: any = {
@@ -57,8 +55,6 @@ const styles: any = {
   textStyle: {
     fontSize: '0.28rem',
     color: '#666',
-    margin: '0',
-    padding: '0'
   },
   buttonStyle: {
     height: '0.6rem',
@@ -66,14 +62,14 @@ const styles: any = {
     backgroundColor: '#83b233',
     color: '#fff',
     borderRadius: '0.2rem',
-    fontWeight: '400',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
+    fontWeight: '400'
   },
   containerStyle: {
+    display: 'flex',
     backgroundColor: '#ededed',
     flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
     height: document.getElementsByTagName('html')[0].clientHeight
   },
   center: {

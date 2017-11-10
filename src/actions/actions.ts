@@ -17,9 +17,10 @@ export function loginOut () {
     state: false
   };
 }
-export function setHomeData (data:  any) {
+export function setHomeData (data:  any, state: number) {
   return {
     type: actions.SETHOMEDATA,
-    data: data
+    data: data,
+    state: state
   };
 }

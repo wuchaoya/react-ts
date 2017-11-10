@@ -14,10 +14,10 @@ import log from '../utils/DebugLog';
 class Home extends React.Component {
   
   render () {
-    
+    let props: any = this.props;
     return (
       <div>
-        <Loading onClick={() => { log('点击'); }} errText='加载失败' state={1} />
+        <Loading onClick={() => { log('点击'); }} state={props.homeDataState} />
         <Swiper dataList={['']} />
       </div>
     );
@@ -28,18 +28,20 @@ class Home extends React.Component {
     HttpRequest.getHomeData(
       '',
       (res: any) => {
-        props.setHomeData(res);
+        props.setHomeData(res, -1);
         log(res);
       },
       (err: any) => {
         log(err);
+        props.setHomeData(null, 1);
       }
     );
   }
 }
 const getLogin: any = (state: any) => {
   return {
-    Login: state.update.login
+    Login: state.update.login,
+    homeDataState: state.update.homeDataState
   };
 };
 const func: any = { login, loginOut, setHomeData };

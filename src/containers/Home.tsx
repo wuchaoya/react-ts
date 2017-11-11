@@ -4,7 +4,10 @@
 
 import * as React from 'react';
 import { connect } from 'react-redux';
+
 import Swiper from '../components/Swiper';
+import Topic from '../components/Topic';
+import styles from '../style/containerStyle';
 
 import { login, loginOut, setHomeData, getData } from '../actions/actions';
 import HttpRequest from '../utils/HttpRequest';
@@ -16,8 +19,9 @@ class Home extends React.Component {
   render () {
     let props: any = this.props;
     return props.homeDataState === 0 ? (
-      <div>
+      <div style={styles.homeStyle}>
         <Swiper showIndex={true} autoplay={true} dataList={props.homeData.banner} />
+        <Topic dataList={props.homeData.dissertation} />
       </div>
     ) : (
       <Loading onClick={() => { log('点击'); }} state={props.homeDataState} />

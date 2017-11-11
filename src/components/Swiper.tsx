@@ -25,7 +25,8 @@ export default class Swiper extends React.Component<Props, any> {
     super(props);
     this.state = {
       translate: props.initialSlide * (props.width || 7.2) || 0,
-      width: props.width || 7.2
+      width: props.width || 7.2,
+      initialSlide: props.initialSlide || 0
     };
   }
   
@@ -36,7 +37,10 @@ export default class Swiper extends React.Component<Props, any> {
         <div style={styles.overflow}>
           <div style={Object.assign({}, styles.container, {transform: 'translateX(' + this.state.translate + 'rem)'})}>
             {dataList.map((item: any, index: number) => {
-                return component || (
+              if (component !== undefined) {
+                return component(item, index);
+              }
+                return (
                   <img height='100%' width='100%' style={slideStyle || styles.slide} key={index} src={item.cover} alt=''/>
                 );
               })}
@@ -59,18 +63,20 @@ export default class Swiper extends React.Component<Props, any> {
     let props = this.props;
     log(this.state.translate);
     log(-this.state.width * props.dataList.length);
-    if (this.state.translate < - this.state.width * props.dataList.length) {
+    if (this.state.initialSlide === props.dataList.length) {
     return;
     }
     if (state) {
       if (this.state.translate === - this.state.width * (props.dataList.length - 1 )) { return; }
       this.setState({
-        translate: (this.state.translate * 10 - this.state.width * 10) / 10
+        translate: ((this.state.initialSlide + 1) *( - this.state.width )),
+        initialSlide: this.state.initialSlide + 1
       });
     } else {
-      if (this.state.translate === 0) { return; }
+      if (this.state.initialSlide === 0) { return; }
       this.setState({
-        translate: (this.state.translate * 10 + this.state.width * 10) / 10
+        translate: ((this.state.initialSlide - 1) *( - this.state.width )),
+        initialSlide: this.state.initialSlide - 1
       });
     }
   }
@@ -89,7 +95,7 @@ export default class Swiper extends React.Component<Props, any> {
           return;
         }
         this.setState({
-          translate: (this.state.translate * 10 - this.state.width * 10) / 10
+          translate: (this.state.translate * 100 - this.state.width * 100) / 100
         }); },
       props.speed || 2500);
   }

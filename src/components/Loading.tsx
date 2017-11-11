@@ -2,6 +2,9 @@
  * Created by chao on 2017/11/8.
  */
 
+import * as React from 'react';
+import log from '../utils/DebugLog';
+
 interface Props {
   state: number;
   loadingIcon?: any;
@@ -17,9 +20,6 @@ interface Props {
   errTextStyle?: any;
   buttonStyle?: any;
 }
-import * as React from 'react';
-import log from '../utils/DebugLog';
-
 const loadingIcon: any = require('../assets/loading.gif');
 const errIcon: any = require('../assets/emoji.png');
 const loadingText: string = '加载中';

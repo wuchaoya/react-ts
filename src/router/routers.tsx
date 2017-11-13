@@ -6,7 +6,7 @@ import * as React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Home from '../containers/Home';
-import Loading from '../components/Loading';
+import Topic from '../containers/Topic';
 
 class Routers extends React.Component {
     render () {
@@ -14,7 +14,7 @@ class Routers extends React.Component {
           <Router>
             <div>
               <Route path="/home" component={Home} />
-              <Route path="/test" component={Loading} />
+              <Route path="/topic" component={Topic} />
             </div>
           </Router>
         );

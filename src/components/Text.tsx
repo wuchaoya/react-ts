@@ -12,6 +12,7 @@ interface Props {
   numberOfLines?: number;
   margin?: string;
   padding?: string;
+  style?: any;
 }
 
 export default class Text extends React.Component<Props, any> {
@@ -19,23 +20,26 @@ export default class Text extends React.Component<Props, any> {
   render () {
     let props: any = this.props;
     return (
-      <span
-        style={
-          Object.assign
-          (
-            JSON.parse(JSON.stringify(styles.textStyle)),
-            {fontSize: props.size + 'rem' || '0.16rem',
-              color: props.color || '#000',
-              WebkitLineClamp: String(props.numberOfLines) || 'none',
-              margin: props.margin || '0',
-              padding: props.padding || '0'
-        },
-            (props.textStyle || {})
-          )
-        }
-      >
-        {props.text}
-      </span>
+      <div style={props.style}>
+        <span
+          style={
+            Object.assign
+            (
+              JSON.parse(JSON.stringify(styles.textStyle)),
+              {fontSize: props.size + 'rem' || '0.16rem',
+                color: props.color || '#000',
+                WebkitLineClamp: String(props.numberOfLines) || 'none',
+                margin: props.margin || '0',
+                padding: props.padding || '0'
+              },
+              (props.textStyle || {})
+            )
+          }
+        >
+          {props.text}
+        </span>
+      </div>
+      
     );
   }
 }
@@ -50,6 +54,6 @@ const styles: any = {
     display: '-webkit-box',
     WebkitBoxOrient: 'vertical',
     overflow: 'hidden',
-    WebkitLineClamp: 'none'
+    WebkitLineClamp: 'none',
   }
 };

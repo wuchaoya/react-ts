@@ -29,6 +29,10 @@ class Home extends React.Component {
   }
   
   componentDidMount () {
+    this.getHomeData();
+  }
+  
+  getHomeData () {
     let props: any = this.props;
     HttpRequest.getHomeData(
       '',

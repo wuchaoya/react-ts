@@ -21,4 +21,20 @@ export default class HttpRequest {
       }
     );
   }
+  static getGameDissertationData (parameter: any, callbackSuccess: any, callbackError: any) {
+    HttpUtils.Post(
+      '/v2/dissertation/',
+      parameter,
+      (response: any) => {
+        if (response.state === 200 && response.data) {
+          callbackSuccess(response.data);
+        } else {
+          callbackError(response.state);
+        }
+      },
+      (error: any) => {
+        callbackError(error);
+      }
+    );
+  }
 }

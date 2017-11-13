@@ -5,6 +5,12 @@
 const styles: any = {
   homeStyle: {
     backgroundColor: '#ededed'
+  },
+  topicStyle: {
+    width: '100%',
+    topTextStyle: {
+      backgroundColor: '#ededed'
+    }
   }
 };
 

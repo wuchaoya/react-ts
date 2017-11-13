@@ -5,7 +5,17 @@
 import * as React from 'react';
 import Gesture from 'rc-gesture';
 import log from '../utils/DebugLog';
-
+/**
+ * dataList : 图片
+ * autoplay : 自动播放
+ * speed : 切换速度
+ * onClick：点击事件
+ * width : 切换宽度
+ * slideStyle : 样式
+ * showIndex : 显示索引
+ * component : 自定义
+ * initialSlide ：初始时index
+ */
 interface Props {
   dataList: any[];
   autoplay?: boolean;
@@ -40,10 +50,10 @@ export default class Swiper extends React.Component<Props, any> {
               if (component !== undefined) {
                 return component(item, index);
               }
-                return (
-                  <img height='100%' width='100%' style={slideStyle || styles.slide} key={index} src={item.cover} alt=''/>
-                );
-              })}
+              return (
+                <img height='100%' width='100%' style={slideStyle || styles.slide} key={index} src={item.cover} alt=''/>
+              );
+            })}
           </div>
           {showIndex ? <div style={styles.dotList}>
               {
@@ -69,13 +79,13 @@ export default class Swiper extends React.Component<Props, any> {
     if (state) {
       if (this.state.translate === - this.state.width * (props.dataList.length - 1 )) { return; }
       this.setState({
-        translate: ((this.state.initialSlide + 1) *( - this.state.width )),
+        translate: ((this.state.initialSlide + 1) * ( - this.state.width )),
         initialSlide: this.state.initialSlide + 1
       });
     } else {
       if (this.state.initialSlide === 0) { return; }
       this.setState({
-        translate: ((this.state.initialSlide - 1) *( - this.state.width )),
+        translate: ((this.state.initialSlide - 1) * ( - this.state.width )),
         initialSlide: this.state.initialSlide - 1
       });
     }

@@ -13,6 +13,8 @@ export default function update (state: any = initialState, action: any) {
       return Object.assign({}, state, {login: action.state});
     case actions.SETHOMEDATA:
       return Object.assign({}, state, {homeData: action.data, homeDataState: action.state});
+    case actions.SETTOPICDATA:
+      return Object.assign({}, state, {topicData: action.data, topicDataState: action.state});
     default:
       return state;
   }

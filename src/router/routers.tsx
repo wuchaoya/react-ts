@@ -13,7 +13,6 @@ class Routers extends React.Component {
         return (
           <Router>
             <div>
-              <Route path="/" component={Home} />
               <Route path="/home" component={Home} />
               <Route path="/topic" component={Topic} />
             </div>

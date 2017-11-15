@@ -58,9 +58,11 @@
       <file leaf-file-name="routers.tsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/router/routers.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-              <folding />
+            <state relative-caret-position="252">
+              <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+              <folding>
+                <element signature="e#42#73#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -591,12 +593,12 @@
       <workItem from="1510366973242" duration="20950000" />
       <workItem from="1510556677732" duration="11464000" />
       <workItem from="1510625812244" duration="5375000" />
-      <workItem from="1510711022623" duration="7430000" />
+      <workItem from="1510711022623" duration="7697000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106965000" />
+    <option name="totallyTimeSpent" value="107232000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="712" extended-state="0" />
@@ -999,9 +1001,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/router/routers.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="252">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding>
+            <element signature="e#42#73#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

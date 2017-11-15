@@ -13,7 +13,7 @@ import { login, loginOut, setHomeData, getData } from '../actions/actions';
 import HttpRequest from '../utils/HttpRequest';
 import Loading from '../components/Loading';
 import log from '../utils/DebugLog';
-
+document.execCommand('Copy');
 class Home extends React.Component {
   
   render () {

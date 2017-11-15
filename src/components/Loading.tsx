@@ -20,8 +20,8 @@ interface Props {
   errTextStyle?: any;
   buttonStyle?: any;
 }
-const loadingIcon: any = require('../assets/loading.gif');
-const errIcon: any = require('../assets/emoji.png');
+const loadingIcon: any = require('../assets/img/loading.gif');
+const errIcon: any = require('../assets/img/emoji.png');
 const loadingText: string = '加载中';
 const errText: string = '连接失败';
 const buttonText: string = '重试';

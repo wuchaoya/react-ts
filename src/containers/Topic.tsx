@@ -21,7 +21,7 @@ class Topic extends React.Component {
     console.log(this.props);
     let props: any = this.props;
     return props.topicDataState === 0 ? (
-      <div>
+      <div style={containerStyle.topicStyle.background}>
         <Img src={props.topicData.cover} width='7.2rem' />
         <Text style={containerStyle.topicStyle.topTextStyle} text={props.topicData.title} size={0.24} color='#666' padding='0.32rem 0.25rem 0.25rem 0.16rem'/>
         {props.topicData.game.map((item: any, index: number) => { return <TopicCard data={item} key={index} />; })}

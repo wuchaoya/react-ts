@@ -10,6 +10,9 @@ const styles: any = {
     width: '100%',
     topTextStyle: {
       backgroundColor: '#ededed'
+    },
+    background: {
+      background: '#ededed'
     }
   }
 };

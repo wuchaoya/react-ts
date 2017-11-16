@@ -16,7 +16,6 @@ export default class TopicCard extends React.Component<Props, any> {
   
   render () {
     let props: any = this.props;
-    console.log(props.data);
     return (
       <div style={styles.containerStyle}>
         <div style={styles.topStyle}>
@@ -40,8 +39,7 @@ const styles: any = {
     flex: '1',
     backgroundColor: '#fff',
     borderRadius: '0.12rem',
-    margin: '0.24rem 0.12rem 0 0.12rem',
-    
+    margin: '0.24rem 0.12rem 0 0.12rem'
   },
   topStyle: {
     display: 'flex',

@@ -1,9 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+这个项目是用 [Create React App](https://github.com/facebookincubator/create-react-app)创建的.
 
-Below you will find some information on how to perform common tasks.<br>
-You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
-
-## Table of Contents
+项目使用了 react + react-router-dom + redux，使用了一个手势nodeModules: rc-gesture, 使用 tslint进行统一代码风格
+## 项目结构
 
 - [Updating to New Releases](#updating-to-new-releases)
 - [Sending Feedback](#sending-feedback)

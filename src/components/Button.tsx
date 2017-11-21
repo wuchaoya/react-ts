@@ -14,6 +14,10 @@ interface Props {
 
 export default class Button extends React.Component<Props, any> {
   
+  constructor(props: any) {
+    super(props);
+  }
+  
   render () {
     let props: any = this.props;
     return (

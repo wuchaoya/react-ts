@@ -27,8 +27,9 @@ interface Props {
   component?: any;
   initialSlide?: number;
 }
+
 let time: any;
-log('swiper');
+
 export default class Swiper extends React.Component<Props, any> {
   
   constructor(props: any) {

@@ -6,6 +6,10 @@
   version "0.22.5"
   resolved "http://registry.npm.taobao.org/@types/cheerio/download/@types/cheerio-0.22.5.tgz#db749e8470d98f103d51407db9bee5a8b9d20d45"
 
+"@types/crypto-js@^3.1.37":
+  version "3.1.37"
+  resolved "https://registry.npmjs.org/@types/crypto-js/-/crypto-js-3.1.37.tgz#ae05b21447d14f2db4bd0a2de950ef18fc78b478"
+
 "@types/enzyme-adapter-react-16@^1.0.1":
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/@types/enzyme-adapter-react-16/download/@types/enzyme-adapter-react-16-1.0.1.tgz#cb93338ccf6cd1b8fdda91027c4ffe56583537b5"
@@ -1124,6 +1128,10 @@ crypto-browserify@^3.11.0:
     pbkdf2 "^3.0.3"
     public-encrypt "^4.0.0"
     randombytes "^2.0.0"
+
+crypto-js@^3.1.9-1:
+  version "3.1.9-1"
+  resolved "https://registry.npmjs.org/crypto-js/-/crypto-js-3.1.9-1.tgz#fda19e761fc077e01ffbfdc6e9fdfc59e8806cd8"
 
 css-color-names@0.0.4:
   version "0.0.4"
@@ -4466,12 +4474,6 @@ raw-body@2.3.2:
     http-errors "1.6.2"
     iconv-lite "0.4.19"
     unpipe "1.0.0"
-
-rc-gesture@^0.0.15:
-  version "0.0.15"
-  resolved "http://registry.npm.taobao.org/rc-gesture/download/rc-gesture-0.0.15.tgz#e9b94ec6854f7c16a3144fc287af79579cbb3796"
-  dependencies:
-    babel-runtime "6.x"
 
 rc@^1.0.1, rc@^1.1.6, rc@^1.1.7:
   version "1.2.2"

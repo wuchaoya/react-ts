@@ -10,6 +10,7 @@ interface Props {
   color?: string;
   name: string;
 }
+
 export default class Icon extends React.Component<Props, any> {
   
   render () {
@@ -30,4 +31,5 @@ export default class Icon extends React.Component<Props, any> {
       </svg>
     );
   }
+  
 }

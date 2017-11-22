@@ -3,7 +3,7 @@
  */
 
 import * as React from 'react';
-import Gesture from 'rc-gesture';
+import Gesture from 'react-gesture-tsx';
 import log from '../utils/DebugLog';
 /**
  * dataList : 图片

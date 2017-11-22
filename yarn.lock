@@ -4518,6 +4518,12 @@ react-error-overlay@^3.0.0:
   version "3.0.0"
   resolved "http://registry.npm.taobao.org/react-error-overlay/download/react-error-overlay-3.0.0.tgz#c2bc8f4d91f1375b3dad6d75265d51cd5eeaf655"
 
+react-gesture-tsx@^0.0.15:
+  version "0.0.15"
+  resolved "https://registry.npmjs.org/react-gesture-tsx/-/react-gesture-tsx-0.0.15.tgz#e06bbe757ee1b9f0822a886cb556ec24b97a3420"
+  dependencies:
+    babel-runtime "6.x"
+
 react-redux@^5.0.6:
   version "5.0.6"
   resolved "http://registry.npm.taobao.org/react-redux/download/react-redux-5.0.6.tgz#23ed3a4f986359d68b5212eaaa681e60d6574946"

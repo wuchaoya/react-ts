@@ -1,18 +1,18 @@
 这个项目是用 [Create React App](https://github.com/facebookincubator/create-react-app)创建的.
 
-项目使用了 react + react-router-dom + redux，使用了一个手势nodeModules: rc-gesture, 使用 tslint进行统一代码风格
-## 项目结构
+项目使用了 react + react-router-dom + redux，封装了一个手势nodeModules: react-gesture-txs放在npm上, 使用 tslint进行统一代码风格
+## 使用手册
 
-- [Updating to New Releases](#updating-to-new-releases)
-- [Sending Feedback](#sending-feedback)
-- [Folder Structure](#folder-structure)
-- [Available Scripts](#available-scripts)
+- [更新版本](#更新版本)
+- [发送反馈](#发送反馈)
+- [文件夹结构](#文件夹结构)
+- [如何运行](#available-scripts)
   - [npm start](#npm-start)
   - [npm test](#npm-test)
   - [npm run build](#npm-run-build)
   - [npm run eject](#npm-run-eject)
 - [Supported Language Features and Polyfills](#supported-language-features-and-polyfills)
-- [Syntax Highlighting in the Editor](#syntax-highlighting-in-the-editor)
+- [代码检测](#代码检测)
 - [Displaying Lint Output in the Editor](#displaying-lint-output-in-the-editor)
 - [Debugging in the Editor](#debugging-in-the-editor)
 - [Formatting Code Automatically](#formatting-code-automatically)
@@ -93,30 +93,20 @@
   - [Moment.js locales are missing](#momentjs-locales-are-missing)
 - [Something Missing?](#something-missing)
 
-## Updating to New Releases
+## 更新版本
 
-Create React App is divided into two packages:
+creacte-cli:
 
-* `create-react-app` is a global command-line utility that you use to create new projects.
-* `react-scripts` is a development dependency in the generated projects (including this one).
+* `create-react-app` 是用来创建新项目的全局命令行工具.
+* `react-scripts` 是生成的项目（包括这个项目）中的一个开发依赖项.
 
-You almost never need to update `create-react-app` itself: it delegates all the setup to `react-scripts`.
+## 发送反馈
 
-When you run `create-react-app`, it always creates the project with the latest version of `react-scripts` so you’ll get all the new features and improvements in newly created apps automatically.
-
-To update an existing project to a new version of `react-scripts`, [open the changelog](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md), find the version you’re currently on (check `package.json` in this folder if you’re not sure), and apply the migration instructions for the newer versions.
-
-In most cases bumping the `react-scripts` version in `package.json` and running `npm install` in this folder should be enough, but it’s good to consult the [changelog](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md) for potential breaking changes.
-
-We commit to keeping the breaking changes minimal so you can upgrade `react-scripts` painlessly.
-
-## Sending Feedback
-
-We are always open to [your feedback](https://github.com/facebookincubator/create-react-app/issues).
+我们随时欢迎你 [发送反馈](https://github.com/wuchaoya/typeScriptReactRedux/issues).
 
 ## Folder Structure
 
-After creation, your project should look like this:
+项目结构如下所示
 
 ```
 my-app/
@@ -135,63 +125,58 @@ my-app/
     logo.svg
 ```
 
-For the project to build, **these files must exist with exact filenames**:
+对于要构建的项目，**这些文件必须以确切的文件名存在：**
 
-* `public/index.html` is the page template;
-* `src/index.js` is the JavaScript entry point.
+* `public/index.html` 是页面模板;
+* `src/index.js` 是JavaScript的入口点.
 
-You can delete or rename the other files.
+您可以删除或重命名其他文件.
 
-You may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by Webpack.<br>
-You need to **put any JS and CSS files inside `src`**, otherwise Webpack won’t see them.
+你可以在里面创建子目录`src`。为了更快的重建，只有内部`src`的文件被`Webpack`处理。
+你需要**放入任何JS和CSS文件`src`**，否则`Webpack`将不会看到它们。
 
-Only files inside `public` can be used from `public/index.html`.<br>
-Read instructions below for using assets from JavaScript and HTML.
+只有里面的文件 `public` 可以使用 `public/index.html`.<br>
 
-You can, however, create more top-level directories.<br>
-They will not be included in the production build so you can use them for things like documentation.
+## 如何运行
 
-## Available Scripts
-
-In the project directory, you can run:
+在项目目录中，可以运行：
 
 ### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+在开发模式下运行应用程序。<br>
+打开http：// localhost：3000在浏览器中查看它.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+如果您进行编辑，该页面将重新加载。
+您还将在控制台中看到任何lint错误。
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](#running-tests) for more information.
+启动测试运行器.<br>
+有关更多信息，请参阅有关 [running tests](#running-tests) .
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+构建生产应用程序到build文件夹。
+它在生产模式下正确捆绑React，并优化构建以获得最佳性能。
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+构建被缩小，文件名包含散列。
+你的应用程序已经准备好部署了！
 
-See the section about [deployment](#deployment) for more information.
+有关更多信息，请参阅关于 [deployment](#deployment).
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**注意：这是一个单向操作。一旦你eject，你不能回去！**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+如果您对构建工具和配置选择不满意，可以eject随时进行。该命令将从您的项目中删除单个构建依赖项。
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+相反，它会将所有的配置文件和传递依赖（Webpack，Babel，ESLint等）拷贝到你的项目中，这样你就可以完全控制它们。所有的命令除了eject仍然有效，但它们会指向复制的脚本，所以你可以调整它们。在这一点上，你是自己的。
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+你不必使用eject。策划的功能集适用于中小型部署，您不应该觉得有义务使用此功能。但是我们知道，如果您在准备好时无法自定义此工具，则此工具将不会有用。
+## 支持的语言功能
 
-## Supported Language Features and Polyfills
-
-This project supports a superset of the latest JavaScript standard.<br>
-In addition to [ES6](https://github.com/lukehoban/es6features) syntax features, it also supports:
+该项目支持最新的JavaScript标准的超集。
+除了ES6语法功能外，它还支持：
 
 * [Exponentiation Operator](https://github.com/rwaldron/exponentiation-operator) (ES2016).
 * [Async/await](https://github.com/tc39/ecmascript-asyncawait) (ES2017).
@@ -200,17 +185,9 @@ In addition to [ES6](https://github.com/lukehoban/es6features) syntax features, 
 * [Class Fields and Static Properties](https://github.com/tc39/proposal-class-public-fields) (stage 2 proposal).
 * [JSX](https://facebook.github.io/react/docs/introducing-jsx.html) and [Flow](https://flowtype.org/) syntax.
 
-Learn more about [different proposal stages](https://babeljs.io/docs/plugins/#presets-stage-x-experimental-presets-).
+详细了解不 [同的提案阶段](https://babeljs.io/docs/plugins/#presets-stage-x-experimental-presets-).
 
-While we recommend to use experimental proposals with some caution, Facebook heavily uses these features in the product code, so we intend to provide [codemods](https://medium.com/@cpojer/effective-javascript-codemods-5a6686bb46fb) if any of these proposals change in the future.
 
-Note that **the project only includes a few ES6 [polyfills](https://en.wikipedia.org/wiki/Polyfill)**:
-
-* [`Object.assign()`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) via [`object-assign`](https://github.com/sindresorhus/object-assign).
-* [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) via [`promise`](https://github.com/then/promise).
-* [`fetch()`](https://developer.mozilla.org/en/docs/Web/API/Fetch_API) via [`whatwg-fetch`](https://github.com/github/fetch).
-
-If you use any other ES6+ features that need **runtime support** (such as `Array.from()` or `Symbol`), make sure you are including the appropriate polyfills manually, or that the browsers you are targeting already support them.
 
 ## Syntax Highlighting in the Editor
 
@@ -218,14 +195,14 @@ To configure the syntax highlighting in your favorite text editor, head to the [
 
 ## Displaying Lint Output in the Editor
 
->Note: this feature is available with `react-scripts@0.2.0` and higher.<br>
->It also only works with npm 3 or higher.
+>注意：此功能可用于react-scripts@0.2.0和更高。<br>
+>它也只适用于npm 3或更高。
 
-Some editors, including Sublime Text, Atom, and Visual Studio Code, provide plugins for ESLint.
+一些编辑器，包括Sublime Text，Atom和Visual Studio Code，提供了ESLint的插件。
 
-They are not required for linting. You should see the linter output right in your terminal as well as the browser console. However, if you prefer the lint results to appear right in your editor, there are some extra steps you can do.
+它们不是必需的。您应该可以在终端以及浏览器控制台中看到linter输出。但是，如果您希望在您的编辑器中显示lint结果，则可以执行一些额外的步骤。
 
-You would need to install an ESLint plugin for your editor first. Then, add a file called `.eslintrc` to the project root:
+您需要先为您的编辑器安装一个ESLint插件。然后，添加一个调用.eslintrc到项目根目录的文件：
 
 ```js
 {
@@ -233,23 +210,11 @@ You would need to install an ESLint plugin for your editor first. Then, add a fi
 }
 ```
 
-Now your editor should report the linting warnings.
 
-Note that even if you edit your `.eslintrc` file further, these changes will **only affect the editor integration**. They won’t affect the terminal and in-browser lint output. This is because Create React App intentionally provides a minimal set of rules that find common mistakes.
+### 在编辑器中调试
 
-If you want to enforce a coding style for your project, consider using [Prettier](https://github.com/jlongster/prettier) instead of ESLint style rules.
+此功能目前仅支持 [此功能目前仅支持](https://code.visualstudio.com) 和 [WebStorm](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) installed.
 
-## Debugging in the Editor
-
-**This feature is currently only supported by [Visual Studio Code](https://code.visualstudio.com) and [WebStorm](https://www.jetbrains.com/webstorm/).**
-
-Visual Studio Code and WebStorm support debugging out of the box with Create React App. This enables you as a developer to write and debug your React code without leaving the editor, and most importantly it enables you to have a continuous development workflow, where context switching is minimal, as you don’t have to switch between tools.
-
-### Visual Studio Code
-
-You would need to have the latest version of [VS Code](https://code.visualstudio.com) and VS Code [Chrome Debugger Extension](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) installed.
-
-Then add the block below to your `launch.json` file and put it inside the `.vscode` folder in your app’s root directory.
 
 ```json
 {

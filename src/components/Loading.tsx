@@ -34,10 +34,10 @@ export default class Loading extends React.Component<Props, any> {
     return props.state === 0 ? null : (
       <div style={Object.assign({}, styles.containerStyle, props.containerStyle)}>
           {props.state === -1 ? <img style={Object.assign({}, styles.loadingIconStyle, props.loadingIconStyle)} src={props.loadingIcon || loadingIcon} alt=''/> : null}
-          {props.state === -1 ? <span style={Object.assign(styles.marginTop, styles.textStyle, props.loadingTextStyle)}>{props.loadingText || loadingText}</span> : null}
+          {props.state === -1 ? <span style={Object.assign(JSON.parse( JSON.stringify(styles.marginTop)), styles.textStyle, props.loadingTextStyle)}>{props.loadingText || loadingText}</span> : null}
           {props.state === 1 ? <img style={Object.assign({}, styles.errIconStyle, props.errIconStyle)} src={props.errIcon || errIcon} alt=''/> : null}
-          {props.state === 1 ? <span style={Object.assign(styles.marginBottom, styles.textStyle, props.errTextStyle)}>{props.loadingText || errText}</span> : null}
-          {props.state === 1 ? <div onClick={props.onClick} style={Object.assign(styles.buttonStyle, styles.center, props.buttonStyle)}>{props.buttonText || buttonText}</div> : null}
+          {props.state === 1 ? <span style={Object.assign(JSON.parse( JSON.stringify(styles.marginBottom)), styles.textStyle, props.errTextStyle)}>{props.loadingText || errText}</span> : null}
+          {props.state === 1 ? <div onClick={props.onClick} style={Object.assign( JSON.parse( JSON.stringify(styles.buttonStyle)), styles.center, props.buttonStyle)}>{props.buttonText || buttonText}</div> : null}
       </div>);
   }
 }

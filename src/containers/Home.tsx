@@ -6,25 +6,41 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 
 import Swiper from '../components/Swiper';
-import Topic from '../components/Topic';
+import Topic from '../components/HomeTopic';
 import styles from '../style/containerStyle';
+import FeaturedGames from '../components/FeaturedGames';
 
 import { login, loginOut, setHomeData, getData } from '../actions/actions';
 import HttpRequest from '../utils/HttpRequest';
 import Loading from '../components/Loading';
 import log from '../utils/DebugLog';
-document.execCommand('Copy');
+
 class Home extends React.Component {
+  
+  constructor(props: any) {
+    super(props);
+    this.state = {};
+    this.getHomeData = this.getHomeData.bind(this);
+  }
   
   render () {
     let props: any = this.props;
     return props.homeDataState === 0 ? (
       <div style={styles.homeStyle}>
-        <Swiper showIndex={true} autoplay={true} dataList={props.homeData.banner} />
-        <Topic dataList={props.homeData.dissertation} />
+        <Swiper
+          onClick={(index: number) => { props.history.push('topic', props.homeData.banner[index].gid); }}
+          showIndex={true}
+          autoplay={true}
+          dataList={props.homeData.banner}
+        />
+        <Topic
+          dataList={props.homeData.dissertation}
+          onClick={(index: number) => { props.history.push('topic', {did: props.homeData.dissertation[index].did}); }}
+        />
+        <FeaturedGames dataList={props.homeData.gameList} />
       </div>
     ) : (
-      <Loading onClick={() => { log('点击'); }} state={props.homeDataState} />
+      <Loading onClick={() => this.getHomeData()} state={props.homeDataState} />
     );
   }
   

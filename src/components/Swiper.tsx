@@ -42,7 +42,7 @@ export default class Swiper extends React.Component<Props, any> {
   }
   
   render () {
-    let { dataList, slideStyle, showIndex, component }: any = this.props;
+    let { dataList, slideStyle, showIndex, component, onClick }: any = this.props;
     return (
       <Gesture onSwipeLeft={() => this.ononSwipe(true)} onSwipeRight={() => this.ononSwipe(false)}>
         <div style={styles.overflow}>
@@ -52,7 +52,9 @@ export default class Swiper extends React.Component<Props, any> {
                 return component(item, index);
               }
               return (
-                <img height='100%' width='100%' style={slideStyle || styles.slide} key={index} src={item.cover} alt=''/>
+                <div key={index} onClick={() => onClick(index)}>
+                  <img height='100%' width='100%' style={slideStyle || styles.slide} src={item.cover} alt=''/>
+                </div>
               );
             })}
           </div>

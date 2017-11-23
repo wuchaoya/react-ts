@@ -10,6 +10,11 @@ interface Props {
   radius?: string;
   color?: string;
   background?: string;
+  margin?: string;
+  padding?: string;
+  size?: string;
+  height?: string;
+  width?: string;
 }
 
 export default class Button extends React.Component<Props, any> {
@@ -29,7 +34,12 @@ export default class Button extends React.Component<Props, any> {
           {border: props.border || '0.01rem solid #b5d185',
             borderRadius: props.radius || '0.26rem',
             color: props.color || '#83b233',
-            background: props.background || '#fff'
+            background: props.background || '#fff',
+            margin: props.margin || '0.3rem 0 0 0',
+            padding: props.padding || '0',
+            fontSize: props.size || '0.22rem',
+            height: props.height || '0.52rem',
+            width: props.width || '1.2rem',
           })}
       >
         <span>

@@ -13,9 +13,15 @@ interface Props {
   numberOfLines?: number;
   margin?: string;
   dataList?: any [];
+  onClick?: any;
 }
 
 export default class Topic extends React.Component<Props, any> {
+  
+  constructor(props: any) {
+    super(props);
+    this.renderSlide = this.renderSlide.bind(this);
+  }
   
   render () {
     let props: any = this.props;
@@ -27,14 +33,17 @@ export default class Topic extends React.Component<Props, any> {
     </div>
     );
   }
+  
   renderSlide (item: any, index: number) {
+    let props: any = this.props;
     return (
-      <div style={styles.sildeaStyle} key={index}>
+      <div onClick={() => props.onClick(index)} style={styles.sildeaStyle} key={index}>
         <img style={styles.imgStyle} src={item.cover} alt={item.title}/>
         <span style={styles.textStyle}>{item.title}</span>
       </div>
     );
   }
+  
 }
 
 const styles: any = {

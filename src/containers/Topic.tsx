@@ -18,7 +18,6 @@ import log from '../utils/DebugLog';
 class Topic extends React.Component {
   
   render () {
-    console.log(this.props);
     let props: any = this.props;
     return props.topicDataState === 0 ? (
       <div style={containerStyle.topicStyle.background}>
@@ -35,10 +34,9 @@ class Topic extends React.Component {
   getTopicData () {
     let props: any = this.props;
     HttpRequest.getGameDissertationData(
-      { did: '41' },
+      { did: props.location.state.did },
       (res: any) => {
         props.setTopicData(res, 0);
-        log(res);
       },
       (err: any) => {
         log(err);

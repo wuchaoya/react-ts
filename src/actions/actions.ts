@@ -17,6 +17,7 @@ export function loginOut () {
     state: false
   };
 }
+
 export function setHomeData (data:  any, state: number) {
   return {
     type: actions.SETHOMEDATA,
@@ -24,6 +25,7 @@ export function setHomeData (data:  any, state: number) {
     state: state
   };
 }
+
 export function setTopicData (data: any, state: number) {
   return {
     type: actions.SETTOPICDATA,
@@ -31,6 +33,7 @@ export function setTopicData (data: any, state: number) {
     state: state
   };
 }
+
 export const getData: any = (state: any) => {
   return {
     Login: state.update.login,

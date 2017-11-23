@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a15b5a60-21a0-403e-9aa8-5a60fb08100b" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/Topic.tsx" afterPath="$PROJECT_DIR$/src/components/HomeTopic.tsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Button.tsx" afterPath="$PROJECT_DIR$/src/components/Button.tsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Loading.tsx" afterPath="$PROJECT_DIR$/src/components/Loading.tsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Swiper.tsx" afterPath="$PROJECT_DIR$/src/components/Swiper.tsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/actions.ts" afterPath="$PROJECT_DIR$/src/actions/actions.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Home.tsx" afterPath="$PROJECT_DIR$/src/containers/Home.tsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Topic.tsx" afterPath="$PROJECT_DIR$/src/containers/Topic.tsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,6 +18,34 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="actions.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/actions/actions.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+              <folding>
+                <element signature="n#!!block;n#login#0" expanded="false" />
+                <element signature="n#!!block;n#loginOut#0" expanded="false" />
+                <element signature="n#!!block;n#setHomeData#0" expanded="false" />
+                <element signature="n#!!block;n#setTopicData#0" expanded="false" />
+                <element signature="e#601#823#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Base64.test.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/unitTesting/Base64.test.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="44" lean-forward="false" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Base64.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/Base64.ts">
           <provider selected="true" editor-type-id="text-editor">
@@ -38,22 +61,112 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Swiper.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Swiper.tsx">
+      <file leaf-file-name="Transition.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/Transition.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6">
-              <caret line="34" column="2" lean-forward="false" selection-start-line="34" selection-start-column="2" selection-end-line="41" selection-end-column="3" />
+            <state relative-caret-position="105">
+              <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JsonToXml.test.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/unitTesting/JsonToXml.test.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="11" column="85" lean-forward="true" selection-start-line="11" selection-start-column="85" selection-end-line="11" selection-end-column="85" />
               <folding>
-                <element signature="e#42#73#0" expanded="true" />
-                <element signature="e#641#832#0" expanded="false" />
-                <element signature="e#848#2092#0" expanded="false" />
-                <element signature="e#1665#2041#0" expanded="false" />
-                <element signature="e#2125#2825#0" expanded="false" />
-                <element signature="e#2843#3309#0" expanded="false" />
-                <element signature="e#3336#3362#0" expanded="false" />
-                <element signature="e#3392#3429#0" expanded="false" />
-                <element signature="e#3453#4376#0" expanded="false" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="button.test.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/componentsTesting/button.test.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="5" column="51" lean-forward="true" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="183">
+                <caret line="1227" column="0" lean-forward="false" selection-start-line="1227" selection-start-column="0" selection-end-line="1232" selection-end-column="3" />
+                <folding>
+                  <marker date="1511240761000" expanded="true" signature="12164:12192" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="13585:13915" ph="{&quot;version&quot;: &quot;0.2.0&quot;...}" />
+                  <marker date="1511240761000" expanded="true" signature="13629:13913" ph="[...]" />
+                  <marker date="1511240761000" expanded="true" signature="13630:13912" ph="{&quot;name&quot;: &quot;Chrome&quot;...}" />
+                  <marker date="1511240761000" expanded="true" signature="13860:13908" ph="{&quot;webpack:///src/*&quot;: &quot;${webRoot}/*&quot;...}" />
+                  <marker date="1511240761000" expanded="true" signature="18976:19007" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="18989:19005" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="19113:19178" ph="..." />
+                  <marker date="1511240761000" expanded="true" signature="19257:19312" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="19270:19310" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="21174:21471" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="21198:21348" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="21253:21285" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="21307:21342" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="21362:21469" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="21383:21458" ph="&lt;div/&gt;" />
+                  <marker date="1511240761000" expanded="true" signature="22404:22424" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="22460:22517" ph="..." />
+                  <marker date="1511240761000" expanded="true" signature="22599:22704" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="22612:22702" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="23783:23849" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="23882:24169" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="29651:29701" ph="..." />
+                  <marker date="1511240761000" expanded="true" signature="29808:29895" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="30105:30145" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="32977:33242" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="32981:33175" ph="//..." />
+                  <marker date="1511240761000" expanded="true" signature="35677:35761" ph="..." />
+                  <marker date="1511240761000" expanded="true" signature="35762:35866" ph="//..." />
+                  <marker date="1511240761000" expanded="true" signature="41033:41180" ph="..." />
+                  <marker date="1511240761000" expanded="true" signature="41120:41173" ph="..." />
+                  <marker date="1511240761000" expanded="true" signature="41630:41656" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="50536:50649" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="50558:50638" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="50572:50634" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="51003:51594" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="51025:51583" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="51085:51149" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="51209:51335" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="51278:51316" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="51411:51458" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="51533:51579" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="52525:52937" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="52547:52926" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="52564:52922" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="52651:52886" ph="//..." />
+                  <marker date="1511240761000" expanded="true" signature="54045:54174" ph="..." />
+                  <marker date="1511240761000" expanded="true" signature="54054:54174" ph="..." />
+                  <marker date="1511240761000" expanded="true" signature="55809:55905" ph="&lt;html/&gt;" />
+                  <marker date="1511240761000" expanded="true" signature="55828:55905" ph="&lt;head/&gt;" />
+                  <marker date="1511240761000" expanded="true" signature="55839:55905" ph="&lt;script/&gt;" />
+                  <marker date="1511240761000" expanded="true" signature="59785:59852" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="60716:60794" ph="..." />
+                  <marker date="1511240761000" expanded="true" signature="60833:60914" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="61854:61932" ph="..." />
+                  <marker date="1511240761000" expanded="true" signature="61971:61994" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="62905:62983" ph="..." />
+                  <marker date="1511240761000" expanded="true" signature="63021:63211" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="64666:64716" ph="..." />
+                  <marker date="1511240761000" expanded="true" signature="65189:65255" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="68108:68226" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="82466:82530" ph="{...}" />
+                  <marker date="1511240761000" expanded="true" signature="104250:104298" ph="..." />
+                  <marker date="1511240761000" expanded="true" signature="104440:104515" ph="..." />
+                </folding>
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -61,55 +174,30 @@
       <file leaf-file-name="Home.tsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/Home.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="39" column="56" lean-forward="false" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
+            <state relative-caret-position="315">
+              <caret line="64" column="2" lean-forward="false" selection-start-line="64" selection-start-column="2" selection-end-line="64" selection-end-column="2" />
               <folding>
-                <element signature="e#42#73#0" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#Home#0" expanded="false" />
+                <element signature="n#!!block;n#render#0;n#Home#0" expanded="false" />
+                <element signature="n#!!block;n#componentDidMount#0;n#Home#0" expanded="false" />
+                <element signature="n#!!block;n#getHomeData#0;n#Home#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FeaturedGames.tsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FeaturedGames.tsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/FeaturedGames.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+            <state relative-caret-position="462">
+              <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#43#74#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Img.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Img.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Icon.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Icon.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-22">
-              <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Button.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Button.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#443#897#0" expanded="false" />
+                <element signature="e#942#1231#0" expanded="false" />
+                <element signature="e#1258#2104#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -123,34 +211,6 @@
               <folding>
                 <element signature="e#43#74#0" expanded="true" />
                 <element signature="e#940#1231#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Topic.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/Topic.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-              <folding>
-                <element signature="n#!!block;n#render#0;n#Topic#0" expanded="false" />
-                <element signature="n#!!block;n#componentDidMount#0;n#Topic#0" expanded="false" />
-                <element signature="n#!!block;n#getTopicData#0;n#Topic#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Loading.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Loading.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="38" column="101" lean-forward="false" selection-start-line="38" selection-start-column="101" selection-end-line="38" selection-end-column="101" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#42#73#0" expanded="true" />
-                <element signature="e#1854#2670#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -178,9 +238,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/utils/HttpUtils.ts" />
-        <option value="$PROJECT_DIR$/src/utils/httpRequests.js" />
-        <option value="$PROJECT_DIR$/src/utils/HttpRequest.ts" />
         <option value="$PROJECT_DIR$/src/utils/HttpUtils.tsx" />
         <option value="$PROJECT_DIR$/src/components/Loading.ts" />
         <option value="$PROJECT_DIR$/tsconfig.test.json" />
@@ -193,7 +250,6 @@
         <option value="$PROJECT_DIR$/src/containers/Topic.ts" />
         <option value="$PROJECT_DIR$/src/reducers/reducer.tsx" />
         <option value="$PROJECT_DIR$/src/utils/HttpRequest.tsx" />
-        <option value="$PROJECT_DIR$/src/actions/actions.ts" />
         <option value="$PROJECT_DIR$/src/data/initialState.ts" />
         <option value="$PROJECT_DIR$/src/components/Img.js" />
         <option value="$PROJECT_DIR$/src/components/Text.tsx" />
@@ -227,8 +283,12 @@
         <option value="$PROJECT_DIR$/src/components/FeaturedGames.ts" />
         <option value="$PROJECT_DIR$/src/components/HomeTopic.tsx" />
         <option value="$PROJECT_DIR$/src/components/Button.tsx" />
-        <option value="$PROJECT_DIR$/src/containers/Home.tsx" />
         <option value="$PROJECT_DIR$/src/components/FeaturedGames.tsx" />
+        <option value="$PROJECT_DIR$/src/containers/Home.tsx" />
+        <option value="$PROJECT_DIR$/src/actions/actions.ts" />
+        <option value="$PROJECT_DIR$/src/test/unitTesting/Base64.test.ts" />
+        <option value="$PROJECT_DIR$/src/test/unitTesting/JsonToXml.ts" />
+        <option value="$PROJECT_DIR$/src/test/unitTesting/JsonToXml.test.ts" />
       </list>
     </option>
   </component>
@@ -326,7 +386,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="containers" />
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unitTesting" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -344,43 +408,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="actions" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -524,12 +552,12 @@
       <workItem from="1511250385098" duration="7284000" />
       <workItem from="1511258179368" duration="102000" />
       <workItem from="1511329910482" duration="12417000" />
-      <workItem from="1511397724773" duration="8500000" />
+      <workItem from="1511397724773" duration="10165000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151143000" />
+    <option name="totallyTimeSpent" value="152808000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="712" extended-state="6" />
@@ -543,7 +571,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2451613" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43709677" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -590,20 +618,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/react-gesture-tsx/lib/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="440" column="24" lean-forward="false" selection-start-line="440" selection-start-column="24" selection-end-line="440" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-gesture-tsx/es/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="413" column="6" lean-forward="false" selection-start-line="413" selection-start-column="6" selection-end-line="413" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/index.tsx" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
@@ -706,11 +720,262 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.test.tsx" />
+    <entry file="file://$PROJECT_DIR$/src/router/routers.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/TopicCard.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="e#43#74#0" expanded="false" />
+            <element signature="e#1028#1283#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="26" column="11" lean-forward="false" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/react/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66920">
+          <caret line="288" column="8" lean-forward="false" selection-start-line="288" selection-start-column="8" selection-end-line="288" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-gesture-tsx/lib/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1638">
+          <caret line="78" column="14" lean-forward="true" selection-start-line="78" selection-start-column="14" selection-end-line="78" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-gesture-tsx/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yarn.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yarn-error.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Encryption.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/HttpRequest.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/DebugLog.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/StarRating.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#Props#0" expanded="false" />
+            <element signature="e#169#447#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/actionsType.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Text.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="17" column="63" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="58" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Topic.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!block;n#render#0;n#Topic#0" expanded="false" />
+            <element signature="n#!!block;n#componentDidMount#0;n#Topic#0" expanded="false" />
+            <element signature="n#!!block;n#getTopicData#0;n#Topic#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Loading.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="38" column="101" lean-forward="false" selection-start-line="38" selection-start-column="101" selection-end-line="38" selection-end-column="101" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#42#73#0" expanded="false" />
+            <element signature="e#1854#2670#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Swiper.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6">
+          <caret line="34" column="2" lean-forward="false" selection-start-line="34" selection-start-column="2" selection-end-line="41" selection-end-column="3" />
+          <folding>
+            <element signature="e#42#73#0" expanded="false" />
+            <element signature="e#641#832#0" expanded="false" />
+            <element signature="e#848#2092#0" expanded="false" />
+            <element signature="e#1665#2041#0" expanded="false" />
+            <element signature="e#2125#2825#0" expanded="false" />
+            <element signature="e#2843#3309#0" expanded="false" />
+            <element signature="e#3336#3362#0" expanded="false" />
+            <element signature="e#3392#3429#0" expanded="false" />
+            <element signature="e#3453#4376#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Button.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Icon.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22">
+          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Img.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/HomeTopic.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="54" column="26" lean-forward="true" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="26" />
+          <folding>
+            <element signature="e#43#74#0" expanded="true" />
+            <element signature="e#940#1231#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/FeaturedGames.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#43#74#0" expanded="true" />
+            <element signature="e#443#897#0" expanded="false" />
+            <element signature="e#942#1231#0" expanded="false" />
+            <element signature="e#1258#2104#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Home.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="64" column="2" lean-forward="false" selection-start-line="64" selection-start-column="2" selection-end-line="64" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#Home#0" expanded="false" />
+            <element signature="n#!!block;n#render#0;n#Home#0" expanded="false" />
+            <element signature="n#!!block;n#componentDidMount#0;n#Home#0" expanded="false" />
+            <element signature="n#!!block;n#getHomeData#0;n#Home#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/actions.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!block;n#login#0" expanded="false" />
+            <element signature="n#!!block;n#loginOut#0" expanded="false" />
+            <element signature="n#!!block;n#setHomeData#0" expanded="false" />
+            <element signature="n#!!block;n#setTopicData#0" expanded="false" />
+            <element signature="e#601#823#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="-2059">
-            <caret line="1233" column="3" lean-forward="false" selection-start-line="1233" selection-start-column="3" selection-end-line="1233" selection-end-column="3" />
+          <first_editor relative-caret-position="183">
+            <caret line="1227" column="0" lean-forward="false" selection-start-line="1227" selection-start-column="0" selection-end-line="1232" selection-end-column="3" />
             <folding>
               <marker date="1511240761000" expanded="true" signature="12164:12192" ph="{...}" />
               <marker date="1511240761000" expanded="true" signature="13585:13915" ph="{&quot;version&quot;: &quot;0.2.0&quot;...}" />
@@ -782,166 +1047,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.test.tsx" />
-    <entry file="file://$PROJECT_DIR$/src/router/routers.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TopicCard.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="e#43#74#0" expanded="false" />
-            <element signature="e#1028#1283#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="26" column="11" lean-forward="false" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/componentsTesting/button.test.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#42#73#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/react/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66920">
-          <caret line="288" column="8" lean-forward="false" selection-start-line="288" selection-start-column="8" selection-end-line="288" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-gesture-tsx/lib/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1638">
-          <caret line="78" column="14" lean-forward="true" selection-start-line="78" selection-start-column="14" selection-end-line="78" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-gesture-tsx/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yarn.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yarn-error.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/Encryption.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/HttpRequest.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/DebugLog.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/StarRating.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#Props#0" expanded="false" />
-            <element signature="e#169#447#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/actionsType.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/Transition.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-          <folding>
-            <element signature="n#!!block;n#JsonToXml#0;n#Transition#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Text.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="17" column="63" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="58" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/actions.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/Base64.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -955,102 +1060,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Topic.tsx">
+    <entry file="file://$PROJECT_DIR$/src/test/componentsTesting/button.test.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-          <folding>
-            <element signature="n#!!block;n#render#0;n#Topic#0" expanded="false" />
-            <element signature="n#!!block;n#componentDidMount#0;n#Topic#0" expanded="false" />
-            <element signature="n#!!block;n#getTopicData#0;n#Topic#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Loading.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="38" column="101" lean-forward="false" selection-start-line="38" selection-start-column="101" selection-end-line="38" selection-end-column="101" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#42#73#0" expanded="true" />
-            <element signature="e#1854#2670#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Swiper.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6">
-          <caret line="34" column="2" lean-forward="false" selection-start-line="34" selection-start-column="2" selection-end-line="41" selection-end-column="3" />
-          <folding>
-            <element signature="e#42#73#0" expanded="true" />
-            <element signature="e#641#832#0" expanded="false" />
-            <element signature="e#848#2092#0" expanded="false" />
-            <element signature="e#1665#2041#0" expanded="false" />
-            <element signature="e#2125#2825#0" expanded="false" />
-            <element signature="e#2843#3309#0" expanded="false" />
-            <element signature="e#3336#3362#0" expanded="false" />
-            <element signature="e#3392#3429#0" expanded="false" />
-            <element signature="e#3453#4376#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Button.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Icon.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        <state relative-caret-position="63">
+          <caret line="5" column="51" lean-forward="true" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Img.tsx">
+    <entry file="file://$PROJECT_DIR$/src/utils/Transition.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        <state relative-caret-position="105">
+          <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Home.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="39" column="56" lean-forward="false" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
-          <folding>
-            <element signature="e#42#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/HomeTopic.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="54" column="26" lean-forward="true" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="26" />
-          <folding>
-            <element signature="e#43#74#0" expanded="true" />
-            <element signature="e#940#1231#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/FeaturedGames.tsx">
+    <entry file="file://$PROJECT_DIR$/src/test/unitTesting/Base64.test.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+          <caret line="8" column="44" lean-forward="false" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#43#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/unitTesting/JsonToXml.test.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="85" lean-forward="true" selection-start-line="11" selection-start-column="85" selection-end-line="11" selection-end-column="85" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>

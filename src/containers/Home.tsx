@@ -62,6 +62,7 @@ class Home extends React.Component {
       }
     );
   }
+  
 }
 
 const func: any = { login, loginOut, setHomeData };
